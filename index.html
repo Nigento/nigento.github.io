@@ -50,8 +50,19 @@
       }
     </style>
   </head>
-  <body onload="showCity()">
+
+  <body>
     <h1>TP Météo HTML</h1>
+
+    <label for="menu-ville">Choisir une ville:</label>
+
+    <select onchange="showCity()" name="ville" id="menu-ville">
+      <option value="">--Choisissez une ville s'il-vous-plaît--</option>
+      <option value="Paris">Paris</option>
+      <option value="Tokyo">東京</option>
+      <option value="Reykjavik">Reykjavik</option>
+    </select>
+
     <div class="flex">
       <div class="block-ville">
         <div class="text">
@@ -66,7 +77,6 @@
           <h2>東京</h2>
           <p>-17,32°C, 嵐</p>
         </div>
-
         <img src="noun_Typhon_1697553.svg" alt="typhon" width="55px" />
       </div>
 
@@ -78,6 +88,7 @@
         <img src="noun_Heat_689788.svg" alt="typhon" width="55px" />
       </div>
     </div>
+
     <div class="copyright">
       <p>Sane Le Troadec</p>
       <p>
