@@ -2,6 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-16" />
+    <script>
+      let villeCourante = "Lyon";
+      function showCity() {
+        alert(villeCourante);
+      }
+    </script>
     <style>
       h1 {
         background-color: black;
@@ -44,7 +50,7 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="showCity()">
     <h1>TP Météo HTML</h1>
     <div class="flex">
       <div class="block-ville">
