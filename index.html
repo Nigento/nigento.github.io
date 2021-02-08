@@ -2,53 +2,9 @@
 <html>
   <head>
     <meta charset="UTF-16" />
-    <script>
-      let villeCourante = "Lyon";
-      function showCity() {
-        console.log(villeCourante);
-      }
-    </script>
-    <style>
-      h1 {
-        background-color: black;
-        color: white;
-        text-align: center;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      }
-      .block-ville {
-        background-color: grey;
-        padding: 1px 5px 10px 15px;
-        margin: 0px 10px 10px 0px;
-        display: flex;
-        flex-grow: 1;
-      }
+    <script type="text/javascript" src="meteo.js"></script>
 
-      h2 {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 22px;
-      }
-      p {
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        font-size: 80%;
-      }
-      .text {
-        padding: 5px;
-      }
-      .copyright {
-        background-color: lightgrey;
-        padding: 1px 5px 10px 15px;
-
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      }
-      .flex {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: baseline;
-      }
-    </style>
+    <link rel="stylesheet" href="meteo.css" />
   </head>
 
   <body>
@@ -64,7 +20,7 @@
     </select>
 
     <div class="flex">
-      <div class="block-ville">
+      <div id="Paris" class="city">
         <div class="text">
           <h2>Paris</h2>
           <p>42°C, Neige</p>
@@ -72,7 +28,7 @@
         <img src="noun_Snow_1532672.svg" alt="Neige-nuage" width="55px" />
       </div>
 
-      <div class="block-ville">
+      <div id="Tokyo" class="city">
         <div class="text">
           <h2>東京</h2>
           <p>-17,32°C, 嵐</p>
@@ -80,7 +36,7 @@
         <img src="noun_Typhon_1697553.svg" alt="typhon" width="55px" />
       </div>
 
-      <div class="block-ville">
+      <div id="Reykjavik" class="city">
         <div class="text">
           <h2>Reykjavik</h2>
           <p>8,314 462 618 153 24°C, Canicule</p>
